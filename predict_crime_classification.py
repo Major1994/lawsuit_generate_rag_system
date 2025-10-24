@@ -22,7 +22,7 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name, trust_rem
 model = PeftModel.from_pretrained(model, "qwen_lora_model")
 
 #训练好的分类权重,替换原来的
-score_weights = torch.load("score_weights.pt") 
+score_weights = torch.load("classify_weights.pt") 
 model.score.load_state_dict(score_weights)
 model=model.eval()
 
