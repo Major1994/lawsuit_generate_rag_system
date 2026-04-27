@@ -16,7 +16,7 @@ import os
 import dashscope
 
 # ================== 配置 ==================
-DASHSCOPE_API_KEY = "sk-af51f271a37748439c658f3882f4d969"
+DASHSCOPE_API_KEY = "sk-*********"
 EMBEDDING_MODEL_PATH = "/root/autodl-tmp/Qwen3-Embedding-8B"
 VECTOR_DB_PATH = "law_db_native"  # 对应之前保存的 native FAISS
 CASE_NUM = 3
